@@ -2,7 +2,7 @@
 
 FROM ubuntu:12.04
 
-MAINTAINER Armel Soro <armel@rm3l.org>
+MAINTAINER rm3l <armel@rm3l.org>
 
 ENV DEBIAN_FRONTEND noninteractive
 
