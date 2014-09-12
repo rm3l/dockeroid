@@ -25,4 +25,9 @@ RUN chmod a+x /home/r2d2/bin/repo
 WORKDIR /home/r2d2/roms
 
 RUN echo "PATH=/home/r2d2/bin:$PATH" >> /etc/bash.bashrc
-RUN echo "USE_CCACHE=1" /etc/bash.bashrc
+RUN echo "USE_CCACHE=1" >> /etc/bash.bashrc
+
+RUN aptitude install -q -y -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" screen
+
+CMD ["/bin/bash"]
+
