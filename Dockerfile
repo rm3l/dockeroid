@@ -16,7 +16,8 @@ RUN ln -s /usr/lib/i386-linux-gnu/mesa/libGL.so.1 /usr/lib/i386-linux-gnu/libGL.
 
 RUN useradd --create-home r2d2
 
-RUN mkdir -p /home/r2d2/{bin,roms}
+RUN mkdir -p /home/r2d2/bin
+RUN mkdir -p /home/r2d2/roms
 
 RUN curl https://storage.googleapis.com/git-repo-downloads/repo > /home/r2d2/bin/repo
 RUN chmod a+x /home/r2d2/bin/repo
