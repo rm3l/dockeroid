@@ -1,6 +1,6 @@
 # Version 1.0
 
-FROM ubuntu:12.04
+FROM ubuntu:18.04
 
 MAINTAINER rm3l <armel@rm3l.org>
 
